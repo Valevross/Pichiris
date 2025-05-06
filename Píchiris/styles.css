@@ -1,0 +1,83 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Argentum+Novus:wght@400;700&family=Lilita+One&display=swap');
+
+:root {
+  --amarillo-pichi: #FFC52F;
+  --coral-pichi: #FF6961;
+  --menta-pichi: #98C9BF;
+  --azul-pichi: #142349;
+  --rosa-pichi: #FFA8A4;
+
+  --fuente-titular: 'Lilita One', cursive;
+  --fuente-cuerpo: 'Argentum Novus', sans-serif;
+}
+
+/* General */
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: #fffef9;
+  color: var(--azul-pichi);
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  font-family: var(--fuente-titular);
+  font-size: 2.5rem;
+  color: var(--azul-pichi);
+}
+
+.subtexto-principal {
+  font-size: 1.2rem;
+  color: var(--coral-pichi);
+}
+
+/* Botones personalizados */
+.btn-pichi {
+  background-color: var(--coral-pichi);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-pichi:hover {
+  background-color: #ff847b;
+}
+
+.btn-outline-pichi {
+  color: var(--coral-pichi);
+  border: 2px solid var(--coral-pichi);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn-outline-pichi:hover {
+  background-color: var(--coral-pichi);
+  color: white;
+}
+
+/* Fondo de navbar y footer */
+.bg-pichi {
+  background-color: var(--amarillo-pichi) !important;
+}
+
+/* Ajustes para imágenes en tarjetas */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Ajustes específicos */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #00000015;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: var(--azul-pichi);
+}
