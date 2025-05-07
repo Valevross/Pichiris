@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda | Píchiris</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-pichi px-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo-pichiris.png" alt="Logo de Píchiris" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="capitulos.html">Capítulos</a></li>
+            <li class="nav-item"><a class="nav-link" href="conocenos.html">Conócenos</a></li>
+            <li class="nav-item"><a class="nav-link" href="mision.html">Misión y Visión</a></li>
+            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link" href="aprende.html">Aprende</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+    
+          <div class="d-flex">
+            <a href="perfil.html" class="btn btn-light me-2">👤</a>
+            <a href="carrito.html" class="btn btn-warning">🛒</a>
+          </div>
+        </div>
+      </nav>
+
+  <!-- TIENDA -->
+  <main class="container py-5">
+    <h1 class="titulo-principal text-center mb-4">Tienda Píchiris</h1>
+    <p class="subtexto-principal text-center mb-5">Compra productos bonitos y apoya una buena causa</p>
+
+    <div class="row g-4">
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/playera.jpg" class="card-img-top" alt="Playera Píchiris" />
+          <div class="card-body">
+            <h5 class="card-title">Playera Píchiris</h5>
+            <p class="card-text">$250 MXN</p>
+            <button onclick="agregarAlCarrito('Playera Píchiris', 250)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/pañuelo.jpg" class="card-img-top" alt="Pañuelo para perrito" />
+          <div class="card-body">
+            <h5 class="card-title">Pañuelo para perrito</h5>
+            <p class="card-text">$120 MXN</p>
+            <button onclick="agregarAlCarrito('Pañuelo para perrito', 120)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/stickers.jpg" class="card-img-top" alt="Stickers" />
+          <div class="card-body">
+            <h5 class="card-title">Stickers</h5>
+            <p class="card-text">$50 MXN</p>
+            <button onclick="agregarAlCarrito('Stickers', 50)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/huesito.jpg" class="card-img-top" alt="Huesito para collar" />
+          <div class="card-body">
+            <h5 class="card-title">Huesito para collar</h5>
+            <p class="card-text">$40 MXN</p>
+            <button onclick="agregarAlCarrito('Huesito para collar', 40)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/gorra.jpg" class="card-img-top" alt="Gorra" />
+          <div class="card-body">
+            <h5 class="card-title">Gorra</h5>
+            <p class="card-text">$180 MXN</p>
+            <button onclick="agregarAlCarrito('Gorra', 180)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow text-center">
+          <img src="assets/coleccionable.jpg" class="card-img-top" alt="Tarjeta coleccionable" />
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta coleccionable</h5>
+            <p class="card-text">$25 MXN</p>
+            <button onclick="agregarAlCarrito('Tarjeta coleccionable', 25)" class="btn btn-pichi">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center p-4 bg-pichi mt-5">
+    <p class="mb-0">© 2025 Píchiris. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
