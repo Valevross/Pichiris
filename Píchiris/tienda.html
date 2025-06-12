@@ -1,129 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tienda | Píchiris</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Píchiris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-pichi px-4">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/logo-pichiris.png" alt="Logo de Píchiris" height="50" />
+  <header>
+    <nav class="navbar">
+        <a href="index.html">
+          <img src="assets/isologo.png" alt="Logo Píchiris" class="navbar-logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarContenido">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="capitulos.html">Capítulos</a></li>
-            <li class="nav-item"><a class="nav-link" href="conocenos.html">Conócenos</a></li>
-            <li class="nav-item"><a class="nav-link" href="mision.html">Misión y Visión</a></li>
-            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
-            <li class="nav-item"><a class="nav-link" href="aprende.html">Aprende</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
-    
-          <div class="d-flex">
-            <a href="perfil.html" class="btn btn-light me-2">👤</a>
-            <a href="carrito.html" class="btn btn-warning">🛒</a>
+      <div class="nav-links">
+        <a href="píchiris.html">Píchiris</a>
+        <a href="tienda.html" class="active" >Tienda</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <a href="login.html" class="login-btn">Iniciar sesión</a>
+    </nav>
+  </header>
+ 
+<!--Sección tienda-->
+ <!-- HERO KIT -->
+  <section class="hero-section tienda-hero">
+    <div class="hero-contenido izquierda">
+      <h1 class="titulo-seccion">Kit callejerx aliadx</h1>
+      <p class="descripcion-seccion">
+        ¡Bienvenidx a la manada!<br><br>
+        Te regalamos este kit especial pensado para quienes llevan el corazón aventurero y empático de Píchiris a todos lados. Cada elemento está diseñado para acompañarte en tus propias misiones callejeras, inspirarte a imaginar, cuidar y sentirte parte de esta historia.
+      </p>
+      <ul class="lista-kit">
+        <li>• Una <strong>libreta pequeña</strong> para anotar tus aventuras o los logros de tu perrito.</li>
+        <li>• <strong>Tarjetas coleccionables.</strong></li>
+        <li>• Un <strong>set de sticker</strong> para decorar lo que quieras con estilo callejero.</li>
+        <li>• Un <strong>pin oficial</strong> de Píchiris.</li>
+        <li>• Y un <strong>certificado</strong> de Callejerx Aliadx.</li>
+      </ul>
+    </div>
+    <div class="hero-imagen derecha">
+      <img src="assets/kit-callejero.png" alt="Kit Callejero Aliadx" class="reflejado">
+    </div>
+   <img src="assets/estrella.png" class="estrella estrella1" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella2" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella3" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella4" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella5" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella6" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella8" alt="estrella">
+  </section>
+
+  <!-- MERCH OFICIAL -->
+  <section class="seccion-merch">
+    <h2 class="subtitulo-seccion">Merch oficial</h2>
+    <div class="contenedor-productos">
+
+      <!-- Producto 1 -->
+      <div class="producto-card">
+        <img src="assets/playera.png" alt="Playera" class="imagen-producto">
+        <div class="info-producto">
+          <div class="texto-producto">
+            <p class="nombre-producto">Playera</p>
+            <p class="precio-producto">$250</p>
           </div>
-        </div>
-      </nav>
-
-  <!-- TIENDA -->
-  <main class="container py-5">
-    <h1 class="titulo-principal text-center mb-4">Tienda Píchiris</h1>
-    <p class="subtexto-principal text-center mb-5">Compra productos bonitos y apoya una buena causa</p>
-
-    <div class="row g-4">
-
-      <!-- PRODUCTO 1 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/playera.jpg" class="card-img-top" alt="Playera Píchiris" />
-          <div class="card-body">
-            <h5 class="card-title">Playera Píchiris</h5>
-            <p class="card-text">$250 MXN</p>
-            <button onclick="agregarAlCarrito('Playera Píchiris', 250)" class="btn btn-pichi">Agregar al carrito</button>
+          <div class="tallas">
+            <span>XS</span><span>S</span><span>M</span><span>L</span>
           </div>
+          <img 
+            src="assets/icono-tacha.png" 
+            class="icono-tacha" 
+            alt="Agregar"
+            data-nombre="Playera"
+            data-precio="250"
+            data-imagen="assets/playera.png">
+            
         </div>
       </div>
 
-      <!-- PRODUCTO 2 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/pañuelo.jpg" class="card-img-top" alt="Pañuelo para perrito" />
-          <div class="card-body">
-            <h5 class="card-title">Pañuelo para perrito</h5>
-            <p class="card-text">$120 MXN</p>
-            <button onclick="agregarAlCarrito('Pañuelo para perrito', 120)" class="btn btn-pichi">Agregar al carrito</button>
+      <!-- Producto 2 -->
+      <div class="producto-card">
+        <img src="assets/pañaleta.png" alt="Pañaleta" class="imagen-producto">
+        <div class="info-producto">
+          <div class="texto-producto">
+            <p class="nombre-producto">Pañaleta</p>
+            <p class="precio-producto">$120</p>
           </div>
+          <div class="tallas">
+            <span>XS</span><span>S</span><span>M</span><span>L</span>
+          </div>
+          <img 
+            src="assets/icono-tacha.png" 
+            class="icono-tacha" 
+            alt="Agregar"
+            data-nombre="Pañaleta"
+            data-precio="120"
+            data-imagen="assets/pañaleta.png"
+            >
         </div>
       </div>
 
-      <!-- PRODUCTO 3 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/stickers.jpg" class="card-img-top" alt="Stickers" />
-          <div class="card-body">
-            <h5 class="card-title">Stickers</h5>
-            <p class="card-text">$50 MXN</p>
-            <button onclick="agregarAlCarrito('Stickers', 50)" class="btn btn-pichi">Agregar al carrito</button>
+      <!-- Producto 3 -->
+      <div class="producto-card">
+        <img src="assets/gorra.png" alt="Gorra" class="imagen-producto">
+        <div class="info-producto">
+          <div class="texto-producto">
+            <p class="nombre-producto">Gorra</p>
+            <p class="precio-producto">$180</p>
           </div>
-        </div>
-      </div>
-
-      <!-- PRODUCTO 4 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/huesito.jpg" class="card-img-top" alt="Huesito para collar" />
-          <div class="card-body">
-            <h5 class="card-title">Huesito para collar</h5>
-            <p class="card-text">$40 MXN</p>
-            <button onclick="agregarAlCarrito('Huesito para collar', 40)" class="btn btn-pichi">Agregar al carrito</button>
+          <div class="tallas">
+            <span>Unitalla</span>
           </div>
-        </div>
-      </div>
-
-      <!-- PRODUCTO 5 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/gorra.jpg" class="card-img-top" alt="Gorra" />
-          <div class="card-body">
-            <h5 class="card-title">Gorra</h5>
-            <p class="card-text">$180 MXN</p>
-            <button onclick="agregarAlCarrito('Gorra', 180)" class="btn btn-pichi">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- PRODUCTO 6 -->
-      <div class="col-sm-6 col-lg-4">
-        <div class="card h-100 shadow text-center">
-          <img src="assets/coleccionable.jpg" class="card-img-top" alt="Tarjeta coleccionable" />
-          <div class="card-body">
-            <h5 class="card-title">Tarjeta coleccionable</h5>
-            <p class="card-text">$25 MXN</p>
-            <button onclick="agregarAlCarrito('Tarjeta coleccionable', 25)" class="btn btn-pichi">Agregar al carrito</button>
-          </div>
+          <img src="assets/icono-tacha.png" 
+          class="icono-tacha" 
+          alt="Agregar"
+          data-nombre="Gorra"
+          data-precio="180"
+          data-imagen="assets/gorra.png"
+          >
         </div>
       </div>
 
     </div>
-  </main>
+  </section>
+  <script src="js/script.js"></script>
 
-  <footer class="text-center p-4 bg-pichi mt-5">
-    <p class="mb-0">© 2025 Píchiris. Todos los derechos reservados.</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
-</html>
+  
+  <!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-central">
+      <span class="footer-izquierda">
+        <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram">
+        <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="Facebook">
+      </span>
+  
+      <div class="footer-texto">
+        <p>2025 Píchiris. Todos los derechos reservados.</p>
+        <p>| Aviso de privacidad | Política de devoluciones y reembolso.</p>
+      </div>
+  
+      <span class="footer-derecha">
+        <img src="assets/logo.png" alt="Píchiris logo">
+      </span>
+    </div>
+  </footer>

@@ -2,68 +2,152 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Píchiris | Inicio</title>
-
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Argentum+Novus:wght@400;700&family=Lilita+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Píchiris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-pichi px-4">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/logo-pichiris.png" alt="Logo de Píchiris" height="50">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarContenido">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="capitulos.html">Capítulos</a></li>
-        <li class="nav-item"><a class="nav-link" href="conocenos.html">Conócenos</a></li>
-        <li class="nav-item"><a class="nav-link" href="mision.html">Misión y Visión</a></li>
-        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
-        <li class="nav-item"><a class="nav-link" href="aprende.html">Aprende</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-      </ul>
-
-      <div class="d-flex">
-        <a href="login.html" class="btn btn-outline-light me-2">Iniciar sesión</a>
-        <a href="perfil.html" class="btn btn-light me-2">Mi perfil</a>
-        <a href="carrito.html" class="btn btn-warning">🛒</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="text-center p-5 hero-section">
-    <h1 class="titulo-principal">Donde otros ven límites, nosotros vemos aventuras</h1>
-    <p class="subtexto-principal">Bienvenido a <strong>Píchiris</strong>, la serie donde la imaginación no tiene barreras 🐾✨</p>
-    <div class="mt-4">
-      <a href="capitulos.html" class="btn btn-pichi">Ver episodio piloto</a>
-      <a href="conocenos.html" class="btn btn-outline-pichi">Conoce a Chiris</a>
-    </div>
-    <img src="assets/portada-pichiris.jpeg" alt="Ilustración de portada de Píchiris" class="img-fluid mt-4">
+  <header>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="assets/isologo.png" alt="Logo Píchiris" class="navbar-logo" />
+      </a>
+        
+        <div class="nav-links">
+          <a href="píchiris.html">Píchiris</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      
+        <a href="login.html" class="login-btn">Iniciar sesión</a>
+      </nav>
   </header>
 
-  <!-- FOOTER -->
-  <footer class="text-center p-4 bg-pichi mt-5">
-    <p class="mb-0">© 2025 Píchiris. Proyecto de tesis de Valeria Cobos.</p>
-  </footer>
+  <main>
+    <!-- Sección Soy Píchiris -->
+    <section class="hero">
+        <img src="assets/annie-y-chiris.png" alt="Annie y Píchiris" class="annie-img">
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="hero-text">
+        <h1 class="titulo-contorno">Soy Píchiris...</h1>
+        <p>Ser diferente no es un límite, es una forma de vivir nuestras aventuras.<br>
+        <strong>¡Descubre el poder de su amor sin barreras!</strong></p>
+      </div>
+      <img src="assets/estrella.png" class="estrella estrella1" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella2" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella3" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella4" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella5" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella6" alt="estrella">
+      <img src="assets/estrella.png" class="estrella estrella8" alt="estrella">
 
-  <!-- Tu script -->
-<script src="script.js"></script>
+    </section>
 
-</body>
-</html>
+    <!-- Sección Desbloquear Capítulo -->
+    <section class="desbloquear">
+      <div class="contenido-desbloquear">
+        <div class="texto">
+          <h2 class="titulo-contorno">¿Ya desbloqueaste el nuevo capítulo?</h2>
+        
+          <div class="btn-contenedor">
+            <a href="píchiris.html" class="boton-desbloquear">DESBLOQUEAR</a>
+            <img src="assets/estrella.png" alt="estrella decorativa" class="estrella-boton">
+          </div>
+        </div>
+        <div class="preview">
+          <div class="capitulo-container">
+            <img src="assets/capitulo-bloqueado.png" alt="Capítulo bloqueado" class="img-capitulo">
+            <img id="imagen-candado" src="assets/candado-cerrado.png" alt="Candado" class="img-candado">
+          </div>
+          
+        </div>
+        <img src="assets/estrella.png" class="estrella estrella7" alt="estrella">
+        <img src="assets/estrella.png" class="estrella estrella9" alt="estrella">
+      
+      </div>
+    </section>
+
+    <!-- Sección Kit Callejero -->
+    <section class="kit-callejero">
+      <div class="contenido-kit">
+        <img src="assets/kit-callejero.png" alt="Kit Callejero" class="img-kit">
+        <div class="texto-kit">
+          <h2 class="titulo-contorno">Un kit callejero para un amigo aventurero</h2>
+          <p>En la compra de cualquier producto de nuestra merch oficial, obtén tu kit callejero...</p>
+        
+          <div class="boton-wrapper">
+          <a href="tienda.html" class="btn-kit">¡YO QUIERO!</a>
+        </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <!-- Sección Comunidad -->
+    <section class="comunidad">
+      <h2 class="titulo-contorno">¡Se parte de la <br> comunidad Píchiris!</h2>
+    
+      <div class="galeria-comunidad">
+        <div class="card-comunidad">
+          <img src="assets/gringo.png" alt="Gringo">
+          <span class="nombre">GRINGO</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+    
+        <div class="card-comunidad">
+          <img src="assets/bombon.png" alt="Bombón">
+          <span class="nombre">BOMBÓN</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+    
+        <div class="card-comunidad">
+          <img src="assets/banana.png" alt="Banana">
+          <span class="nombre">BANANA</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+    
+        <div class="card-comunidad">
+          <img src="assets/spike.png" alt="Spike">
+          <span class="nombre">SPIKE</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+    
+        <div class="card-comunidad">
+          <img src="assets/morita.png" alt="Morita">
+          <span class="nombre">MORITA</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+    
+        <div class="card-comunidad">
+          <img src="assets/simba.png" alt="Simba">
+          <span class="nombre">SIMBA</span>
+          <img src="assets/icono-tacha.png" alt="Agregar" class="icono-tacha icono-tacha-animada">
+        </div>
+      </div>
+    
+      <h2 class="subtitulo-contorno">Comparte tu foto en<br> insta con el #Píchiris</h2>
+    </section>
+    
+<!-- Footer -->
+
+<footer class="footer">
+  <div class="footer-central">
+    <span class="footer-izquierda">
+      <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram">
+      <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="Facebook">
+    </span>
+
+    <div class="footer-texto">
+      <p>2025 Píchiris. Todos los derechos reservados.</p>
+      <p>| Aviso de privacidad | Política de devoluciones y reembolso.</p>
+    </div>
+
+    <span class="footer-derecha">
+      <img src="assets/logo.png" alt="Píchiris logo">
+    </span>
+  </div>
+</footer>
+

@@ -1,0 +1,1136 @@
+/* ===== TIPOGRAFÍAS ===== */
+body {
+    margin: 0;
+    font-family: 'Lilita One', cursive;
+    /* Textos secundarios en Agentum Novus */
+    --secondary-font: 'Agentum Novus', sans-serif;
+    background-color: #F5F0E6;
+  }
+  
+  /* ===== NAVBAR ===== */
+  .navbar {
+    background-color: #0D2E5B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 3rem;
+  }
+
+  
+  .navbar-logo {
+    height: 70px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+  }
+  
+  .nav-links a.active {
+    color: #FCBE37;
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .login-btn {
+    margin-left: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    color: white;
+    background: transparent;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Lilita One', cursive;
+  }
+  
+  .login-btn:hover {
+    background-color: white;
+    color: #0D2E5B;
+  }
+  
+  /* ===== HERO ===== */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem; /* ← antes era 2rem, ahora solo 1rem arriba y abajo */
+    gap: 4rem;
+    position: relative;
+    background-color: #F5F0E6;
+    z-index: 2;
+  }
+  .hero img {
+    max-width: 500px;
+  }
+  
+  .hero-text {
+    max-width: 400px;
+    font-family: 'Agentum Novus', sans-serif;
+    color: #0D2E5B;
+    padding-left: 2rem;
+  }
+  
+  
+  .hero-text h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #FCBE37;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white,
+                 -4px 4px 0 white, 4px 4px 0 white;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #0D2E5B;
+    max-width: 350px;
+    line-height: 1.4;
+  }
+  
+  .hero-text strong {
+    font-weight: bold;
+  }
+  
+  .estrella {
+    position: absolute;
+    z-index: 10;
+    animation: pulsar 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+  }
+  
+  .estrella1 { top: 60px; left: 5%; width: 160px; }
+  .estrella2 { top: 0px; right: 18%; width: 120px; }
+  .estrella3 { top: 240px; left: 27%; width: 50px; }
+  .estrella4 { bottom: 40px; left: 14%; width: 140px; }
+  .estrella5 { bottom: 60px; right: 20%; width: 100px; }
+  .estrella6 { top: 200px; right: 10%; width: 60px; }
+  .estrella7 { bottom:900px; right: 20%; width: 110px; }
+  .estrella8 { top: 90px; left: 45%; width: 80px; }
+  .estrella9 { top: 550px; left: 0%; width: 180px; }
+  
+  
+  /* ===== DESBLOQUEAR ===== */
+  .desbloquear {
+    background-color: #8EC1BB;
+    padding: 2rem 10rem 2rem 1rem;
+    text-align: center;
+  }
+  
+  .contenido-desbloquear {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .texto {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .titulo-contorno {
+    font-family: 'Lilita One', cursive;
+    font-size: 3rem;
+    color: #FCBE37;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white,
+                 -4px 4px 0 white, 4px 4px 0 white;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .boton-desbloquear {
+    background-color: #FCBE37;
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .btn-contenedor {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .estrella-boton {
+    position: absolute;
+    bottom: -50px;
+    right: -40px;
+    width: 100px;
+    animation: pulsar 2.5s ease-in-out infinite;
+  }
+  
+  .preview img {
+    max-width: 250px;
+  }
+  .capitulo-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: inline-block;
+  }
+  }
+  
+  .img-capitulo {
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .img-candado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    transition: all 0.3s ease;
+    z-index: 5;
+  }
+  
+  
+  /* ===== KIT CALLEJERO ===== */
+  .kit-callejero {
+    background-color: #F5F0E6;
+    padding: 2rem;
+    padding: -8rem 2rem -8rem 1rem;
+  }
+  
+  .contenido-kit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .texto-kit {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .texto-kit h2 {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.8rem;
+    color: #0D2E5B;
+  }
+  
+  .texto-kit p {
+    font-family: 'Agentum Novus', sans-serif;
+    font-size: 1.2rem;
+    color: #0D2E5B;
+  }
+  .boton-wrapper {
+  text-align: center;}
+
+  .btn-kit {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #0D2E5B;
+    color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    text-decoration: none;
+
+  }
+  
+ 
+  .img-kit {
+    max-width: 500px;   /* puedes ajustar este valor */
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+ 
+  /* ===== COMUNIDAD ===== */
+  .comunidad {
+    background-color: #8EC1BB;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .titulo-contorno {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    color: #0D2E5B;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white, -4px 4px 0 white, 4px 4px 0 white;
+    margin-bottom: 2rem;
+  }
+
+  .subtitulo-contorno {
+    font-family: 'Lilita One', cursive;
+    font-size: 2rem;
+    color: #0D2E5B;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white, -4px 4px 0 white, 4px 4px 0 white;
+    margin-bottom: 2rem;
+  }
+  
+  .galeria-comunidad {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 columnas del tamaño del contenido */
+    gap: 2rem 3rem; /* separación entre filas y columnas */
+    justify-content: center; /* CENTRA todo el grid en su contenedor */
+    margin-top: 1rem;
+  }
+  
+  .card-comunidad {
+    position: relative;
+    background-color: #F5F0E6;
+    width: 160px; /* más grande que antes */
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+
+  .card-comunidad img:first-child {
+    width: 100%;
+    border-radius: 8px; /* o el valor que desees */
+    display: block;
+  }
+  .nombre {
+    display: block;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.3rem;
+    color: #0D2E5B;
+    margin-top: 0.4rem;
+    padding-bottom: 1.5rem; /* espacio para que la tachita no se encime */
+  }
+  
+  .icono-tacha {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 24px;
+    height: 24pr;
+    object-fit: contain;
+    z-index: 2;
+  }
+  /* Animación Luz cuadro*/
+  
+  .card-comunidad {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card-comunidad:hover {
+    box-shadow: 0 0 10px #FCBE37, 0 0 20px #FCBE37;
+  }
+/* Animación opcional */
+.icono-tacha-animada {
+  transition: transform 0.3s ease;
+}
+
+.icono-tacha-animada:hover {
+  transform: rotate(45deg);
+}
+  
+
+  /* ===== footer===== */
+  .footer {
+    background-color: #0D2E5B;
+    padding: 1.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-central {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-central > * {
+    display: inline-block;
+  }
+  
+  .footer-izquierda img,{
+  height: 10px;
+  margin: 4 8px;
+}
+  .footer-derecha img {
+    height: 60px;
+    margin: 0 8px;
+  }
+  
+  .footer-texto {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+   /* Nosotros*/
+   /* ======== ESTILOS SECCIÓN NOSOTROS ======== */
+
+/* Presentación Vale */
+.presentacion {
+  background-color: #F5F0E6;
+  padding: 4rem 2rem;
+}
+
+.contenedor-vale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foto-vale {
+  width: 350px;
+  max-width: 90vw;
+}
+
+.texto-vale {
+  max-width: 500px;
+  font-family: 'Agentum Novus', sans-serif;
+  color: #0D2E5B;
+  font-size: 1.3rem;
+}
+
+.texto-vale h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 2.5rem;
+  color: #0D2E5B;
+  margin-bottom: 1rem;
+  text-shadow: -4px -4px 0 white, 4px -4px 0 white,
+  -4px 4px 0 white, 4px 4px 0 white;
+}
+
+/* Historia */
+.historia {
+  background-color: #8EC1BB;
+  padding: 0rem 0rem;
+}
+
+.historia-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.historia-texto {
+  max-width: 500px;
+  font-family: 'Agentum Novus', sans-serif;
+  color: #0D2E5B;
+  font-size: 1rem;
+}
+
+.logo-historia {
+  height: 120px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-historia {
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Misión y Visión */
+.mision-vision {
+  background-color: #F5F0E6;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bloque-mision,
+.bloque-vision {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: 'Agentum Novus', sans-serif;
+  color: #0D2E5B;
+}
+
+.bloque-mision img,
+.bloque-vision img {
+  height: 80px;
+  margin-top: 0px;
+}
+
+.bloque-mision h2,
+.bloque-vision h2 {
+  font-family: 'Lilita One', cursive;
+  font-size: 2rem;
+  color: #0D2E5B;
+  text-shadow: 2px 2px 0 #ffffff;
+  margin: 0;
+}
+
+.bloque-mision p,
+.bloque-vision p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Sección Tienda*/ 
+
+.btn-sesion {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Lilita One', cursive;
+  
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #F5F0E6;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-contenido {
+  padding-left: 10rem;
+  flex: 1;
+  
+}
+
+.hero-imagen img {
+  max-width: 200%;
+  height: auto;
+  transform: scaleX(-1);
+  margin-top: 3rem;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -50px;
+}
+
+.titulo-seccion {
+ font-family: 'Lilita One', cursive;
+    font-size: 3rem;
+    color: #FCBE37;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white,
+                 -4px 4px 0 white, 4px 4px 0 white;
+    margin-bottom: 1rem;
+}
+
+.descripcion-seccion {
+ max-width: 400px;
+    font-family: 'Agentum Novus', sans-serif;
+    color: #0D2E5B;
+    padding-left: 2rem;
+}
+
+.lista-kit li {
+  margin-bottom: 0.5rem;
+    font-family: 'Agentum Novus', sans-serif;
+    color: #0D2E5B;
+    padding-left: 2rem;
+}
+
+/* Estrellas animadas */
+ .estrella {
+    position: absolute;
+    z-index: 10;
+    animation: pulsar 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+  }
+  
+   .estrella1 { top: 60px; left: 5%; width: 160px; }
+  .estrella2 { top: 0px; right: 18%; width: 120px; } 
+  .estrella4 { bottom: 40px; left: 14%; width: 140px; }
+  .estrella5 { bottom: 60px; right: 20%; width: 100px; }
+  .estrella7 { bottom:900px; right: 20%; width: 110px; }
+  .estrella8 { top: 90px; left: 45%; width: 80px; }
+  .estrella9 { top: 550px; left: 0%; width: 180px; }
+  
+  
+/* Sección Merch */
+.seccion-merch {
+  background-color: #8EC1BB;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.subtitulo-seccion {
+  font-family: 'Lilita One', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #0D2E5B;
+    text-shadow: -4px -4px 0 white, 4px -4px 0 white,
+                 -4px 4px 0 white, 4px 4px 0 white;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.producto-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 240px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.imagen-producto {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.info-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.texto-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nombre-producto {
+  font-family: 'Lilita One', cursive;
+  margin: 0;
+  color: #0D2E5B;
+  font-size: 1.6rem;
+}
+
+.precio-producto {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.3rem;
+  margin: 0;
+  color: #0D2E5B;
+}
+
+.tallas {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+  color: #0D2E5B;
+}
+
+.tallas span {
+  border: 2px solid #8EC1BB;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.icono-tacha {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 25px;
+  transition: transform 0.3s ease;
+}
+
+.icono-tacha:hover {
+  transform: rotate(180deg);
+}
+/* Animación Luz cuadro*/
+  
+ .producto-card {
+    transition: box-shadow 0.3s ease;
+  }
+  
+.producto-card:hover {
+    box-shadow: 0 0 10px #FCBE37, 0 0 20px #FCBE37;
+  }
+
+  /* Carrito */
+
+  * === FONDO === */
+.carrito-body {
+  background-image: url('assets/Fondo-carrito.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  font-family: 'Argentum Novus', sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.carrito-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+
+
+/* === FLECHITA Y VOLVER === */
+.volver {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.flecha-icono {
+  height: 24px;
+}
+
+.volver-texto {
+  font-family: 'Argentum Novus', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #0D2E5B;
+  font-weight: bold;
+}
+
+/* === TÍTULOS === */
+.titulo-seccion {
+  font-family: 'Lilita One', cursive;
+  font-size: 2rem;
+  color: #0D2E5B;
+  margin-bottom: 2rem;
+}
+
+.subtitulo-seccion {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.5rem;
+  color: #0D2E5B;
+}
+
+/* === FORMULARIO === */
+.formulario-carrito .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #F0F0F0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === MÉTODO DE ENVÍO === */
+.metodo-envio {
+  background-color: #F5F0E6;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.metodo-envio .form-check-input {
+  background-color: #FCBE37;
+  border: none;
+  transform: scale(1.3);
+}
+
+/* === TOTAL Y PAGO === */
+.total-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: 'Lilita One', cursive;
+}
+
+.btn-pagar {
+  background-color: #0D2E5B;
+  color: white;
+  border: none;
+  font-family: 'Lilita One', cursive;
+  font-size: 1.2rem;
+  padding: 0.8rem 3rem;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pagar:hover {
+  background-color: #083161;
+}
+
+/* Comic */
+.comic-container {
+  background-color: #F5F0E6;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.comic-img {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+
+/* Contactanos*/
+.contacto-section {
+  background-image: url('assets/backgroundtextura.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto-titulo {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #0D2E5B;
+}
+
+.contacto-form form input {
+  width: 100%;
+  padding: 0.8rem 0rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+
+.contacto-form form button {
+  width: 100%;
+  background-color: #0D2E5B;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: 'Lilita One', cursive;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form form button:hover {
+  background-color: #FCBE37;
+  color: #0D2E5B;
+}
+
+.login-section {
+  background-color: #F5F0E6;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+.login-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-titulo {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.8rem;
+  color: #0D2E5B;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem 1.2rem 0.8rem .02rem;;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #0D2E5B;
+  color: white;
+  padding: 0.8rem;
+  font-family: 'Lilita One', cursive;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #FCBE37;
+  color: #0D2E5B;
+}
+.login-links {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login-links a {
+  color: #0D2E5B;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+.carrito-item-limpio {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.carrito-nombre {
+  font-weight: 600;
+  color: #0D2E5B;
+}
+
+.carrito-controles button {
+  background-color: transparent;
+  border: 1px solid #0D2E5B;
+  color: #0D2E5B;
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.carrito-controles span {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.carrito-precio {
+  font-weight: 600;
+  color: #0D2E5B;
+}
+
+/* Total y botón PAGAR */
+.total-label {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.2rem;
+  color: #0D2E5B;
+}
+
+#total-pedido {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0D2E5B;
+}
+
+.btn-pagar {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: #0D2E5B;
+  color: white;
+  font-family: 'Lilita One', cursive;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-pagar:hover {
+  background-color: #FCBE37;
+  color: #0D2E5B;
+}
+
+/* Inputs 100% */
+.formulario-carrito .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botón pagar igual que botón de login */
+.btn-pagar {
+  background-color: #0D2E5B;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-family: 'Lilita One', cursive;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 2rem auto 0 auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pagar:hover {
+  background-color: #FCBE37;
+  color: #0D2E5B;
+}
+
+.carrito-section {
+  background-image: url('assets/backgroundtextura.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carrito-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.carrito-titulo {
+  font-family: 'Lilita One', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #0D2E5B;
+  text-align: center;
+}
+
+.carrito-form form input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #F0F0F0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carrito-form form input:focus {
+  outline: 2px solid #FCBE37;
+  background-color: white;
+}
+
+.carrito-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.formulario-carrito input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #F0F0F0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formulario-carrito input:focus {
+  outline: 2px solid #FCBE37;
+  background-color: white;
+}
+
+.titulo-seccion {
+  font-family: 'Lilita One', cursive;
+  color: #0D2E5B;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
